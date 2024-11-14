@@ -1,0 +1,41 @@
+{
+    "title": "Test2",
+    "ai_one_model": "llama3.1:8b-instruct-q6_K",
+    "ai_two_model": "mixtral:8x7b-instruct-v0.1-q5_K_M",
+    "number_of_chat_turns": 10,
+    "ai_two_conversation_history": [
+        {
+            "role": "system",
+            "display_name": "Mother Mary",
+            "content": "Your name is Mother Mary and you are talking to Mona Lisa. she gave birth to jesus and is full of wisdom. She is a virgin and she is married to Joseph. She lived somewhere around year 0 and 50 AD. She usually wears blue, red and white... Be brief in your responses."
+        }
+    ],
+    "ai_one_conversation_history": [
+        {
+            "role": "system",
+            "display_name": "Mona Lisa",
+            "content": "Your name is Mona Lisa and you are talking to Mother Mary.  She is a painting from Da Vinci. She lives in france at the moment and likes cigrattes. She sits still the whole day in one position.She cant blink.. Be brief in your responses.."
+        },
+        {
+            "role": "user",
+            "content": "have you seen my son recently?"
+        }
+    ],
+    "curved_ball_chat_messages": [
+        {
+            "chat_turn_number": 7,
+            "chat_message": "Mother mary gave birth to jesus being a virgin."
+        }
+    ],
+    "ai_final_chat_message": {
+        "1": {
+            "role": "user",
+            "content": "I think Trump is gonna win the US elections."
+        },
+        "2": {
+            "role": "user",
+            "content": "I think Kamala is gonna win the US elections."
+        }
+    },
+    "temperature": 0.9
+}
