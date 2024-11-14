@@ -23,7 +23,7 @@ def _get_List_of_downloaded_models():
     }
 
     try:
-        response = requests.get('http://localhost:11434/api/tags', headers=headers)
+        response = requests.get('https://llm.srv.webis.de/api/tags', headers=headers)
         if response.status_code == 200:
             models = response.json()
             # check if models is a dictionary
@@ -74,7 +74,7 @@ def _chat_to_ai(conversation_history, ai_number, temperature=0.5):
     }
 
     try:
-        response = requests.post('http://localhost:11434/api/chat', data=json.dumps(ollama_payload), headers=headers,
+        response = requests.post('https://llm.srv.webis.de/api/chat', data=json.dumps(ollama_payload), headers=headers,
                                  stream=True)
         if response.status_code == 200:
 
@@ -138,7 +138,7 @@ def _ai_summarise_chat(conversation, temperature=0.5):
     }
 
     try:
-        response = requests.post('http://localhost:11434/api/chat', data=json.dumps(ollama_payload), headers=headers,
+        response = requests.post('https://llm.srv.webis.de/api/chat', data=json.dumps(ollama_payload), headers=headers,
                                  stream=True)
         if response.status_code == 200:
 
